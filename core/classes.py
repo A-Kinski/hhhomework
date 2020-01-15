@@ -19,15 +19,10 @@ class Garage:
 
     def delete(self, index):
         del self.carsList[index]
+        
+    def __len__(self):
+        return len(self.carsList)
 
+    def __getitem__(self, item):
+        return self.carsList[item]
 
-# if __name__ == '__main__':
-#     car1 = Car('mark1', 'model1')
-#     car2 = Car('mark2', 'model2')
-#     cars = [car1, car2]
-#     garage = Garage(cars)
-#     car3 = Car('mark3', 'model3')
-#     garage.add(car3)
-#     print(garage.carsList)
-#     garage.delete(1)
-#     print(garage.carsList)
