@@ -4,7 +4,7 @@ def cache_decorator(f):
     # Настоятельно прошу написать декоратор руками, а не копировать, т.к. важно запомнить как это работает
     cache = {}
     def inner(*args):
-    	if args not in cache
+    	if args not in cache:
     		cache[args] = f(*args)
     	return cache[args]
     return inner

@@ -34,7 +34,15 @@ def map_keys_and_values(some_keys, some_values):
 # Написать функцию, которая принимает строку и возвращает словарь состоящий из ключей - символов из строки, значений - количество повторений этих символов в строке
 s = 'some string'
 def count_symbols(some_string):
-  repeat_count = dict.fromkeys(s, 0)
-  for c in s
+  repeat_count = dict.fromkeys(some_string, 0)
+  for c in some_string:
     repeat_count[c] += 1
-   return repeat_count
+  return repeat_count
+
+# if __name__ == '__main__':
+#   print(even(not_even_list))
+#   print(get_ages(years_of_birth))
+#   print(get_first_n_last(numbers))
+#   print(get_list_without_repetition(list_with_repetition))
+#   print(map_keys_and_values(keys, values))
+#   print(count_symbols(s))
